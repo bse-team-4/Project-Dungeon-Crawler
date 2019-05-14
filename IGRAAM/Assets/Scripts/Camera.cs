@@ -9,12 +9,12 @@ public class Camera : MonoBehaviour
     public float smooth = 0.3f;
     public float height;
     private Vector3 velocity = Vector3.zero;
-
+    Vector3 pos = new Vector3();
 
     //Methods
     void Update()
     {
-        Vector3 pos = new Vector3();
+        
         pos.x = player.position.x;
         pos.z = player.position.z - 7f;
         pos.y = player.position.y + height;
